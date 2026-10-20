@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://clx7pds2yqp67"]
+
+[ext_resource type="Script" uid="uid://bmccwthjafk27" path="res://scenes/card_ui.gd" id="1_5x102"]
+[ext_resource type="Resource" uid="uid://bchki07v2yr4m" path="res://cards/defend.tres" id="2_e1hm3"]
+[ext_resource type="Texture2D" uid="uid://bymjwwcefs5e" path="res://assets/textures/Strike_R.webp" id="3_birkm"]
+
+[node name="CardUI" type="Control" unique_id=1210886245]
+custom_minimum_size = Vector2(180, 240)
+custom_maximum_size = Vector2(180, 240)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_5x102")
+card_data = ExtResource("2_e1hm3")
+
+[node name="CardTexture" type="TextureRect" parent="." unique_id=862863477]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_birkm")
+expand_mode = 1
+
+[node name="Hitbox" type="Control" parent="." unique_id=681717162]
+custom_minimum_size = Vector2(158, 230)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = -230.0
+offset_right = 79.0
+grow_horizontal = 2
+grow_vertical = 0
